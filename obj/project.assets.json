@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\michz\\Desktop\\Klasa 4tip\\FirstExercise4Class\\FirstExercise4Class.csproj",
+      "projectUniqueName": "C:\\Users\\michz\\Desktop\\Klasa 4tip\\FirstExercise4Class\\Exercise1\\FirstExercise4Class.csproj",
       "projectName": "FirstExercise4Class",
-      "projectPath": "C:\\Users\\michz\\Desktop\\Klasa 4tip\\FirstExercise4Class\\FirstExercise4Class.csproj",
+      "projectPath": "C:\\Users\\michz\\Desktop\\Klasa 4tip\\FirstExercise4Class\\Exercise1\\FirstExercise4Class.csproj",
       "packagesPath": "C:\\Users\\michz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\michz\\Desktop\\Klasa 4tip\\FirstExercise4Class\\obj\\",
+      "outputPath": "C:\\Users\\michz\\Desktop\\Klasa 4tip\\FirstExercise4Class\\Exercise1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Projekty szkola\\Components\\Offline Packages",
