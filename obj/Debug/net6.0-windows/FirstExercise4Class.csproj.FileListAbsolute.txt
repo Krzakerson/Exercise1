@@ -52,3 +52,21 @@ C:\Users\michz\Desktop\Klasa 4tip\FirstExercise4Class\Exercise1\obj\Debug\net6.0
 C:\Users\michz\Desktop\Klasa 4tip\FirstExercise4Class\Exercise1\obj\Debug\net6.0-windows\FirstExercise4Class.pdb
 C:\Users\michz\Desktop\Klasa 4tip\FirstExercise4Class\Exercise1\obj\Debug\net6.0-windows\FirstExercise4Class.genruntimeconfig.cache
 C:\Users\michz\Desktop\Klasa 4tip\FirstExercise4Class\Exercise1\obj\Debug\net6.0-windows\ref\FirstExercise4Class.dll
+E:\student\dokumenty\GitHub\Exercise1\bin\Debug\net6.0-windows\FirstExercise4Class.exe
+E:\student\dokumenty\GitHub\Exercise1\bin\Debug\net6.0-windows\FirstExercise4Class.deps.json
+E:\student\dokumenty\GitHub\Exercise1\bin\Debug\net6.0-windows\FirstExercise4Class.runtimeconfig.json
+E:\student\dokumenty\GitHub\Exercise1\bin\Debug\net6.0-windows\FirstExercise4Class.dll
+E:\student\dokumenty\GitHub\Exercise1\bin\Debug\net6.0-windows\FirstExercise4Class.pdb
+E:\student\dokumenty\GitHub\Exercise1\obj\Debug\net6.0-windows\FirstExercise4Class.csproj.AssemblyReference.cache
+E:\student\dokumenty\GitHub\Exercise1\obj\Debug\net6.0-windows\FirstExercise4Class.Form1.resources
+E:\student\dokumenty\GitHub\Exercise1\obj\Debug\net6.0-windows\FirstExercise4Class.Properties.Resources.resources
+E:\student\dokumenty\GitHub\Exercise1\obj\Debug\net6.0-windows\FirstExercise4Class.csproj.GenerateResource.cache
+E:\student\dokumenty\GitHub\Exercise1\obj\Debug\net6.0-windows\FirstExercise4Class.GeneratedMSBuildEditorConfig.editorconfig
+E:\student\dokumenty\GitHub\Exercise1\obj\Debug\net6.0-windows\FirstExercise4Class.AssemblyInfoInputs.cache
+E:\student\dokumenty\GitHub\Exercise1\obj\Debug\net6.0-windows\FirstExercise4Class.AssemblyInfo.cs
+E:\student\dokumenty\GitHub\Exercise1\obj\Debug\net6.0-windows\FirstExercise4Class.csproj.CoreCompileInputs.cache
+E:\student\dokumenty\GitHub\Exercise1\obj\Debug\net6.0-windows\FirstExercise4Class.dll
+E:\student\dokumenty\GitHub\Exercise1\obj\Debug\net6.0-windows\refint\FirstExercise4Class.dll
+E:\student\dokumenty\GitHub\Exercise1\obj\Debug\net6.0-windows\FirstExercise4Class.pdb
+E:\student\dokumenty\GitHub\Exercise1\obj\Debug\net6.0-windows\FirstExercise4Class.genruntimeconfig.cache
+E:\student\dokumenty\GitHub\Exercise1\obj\Debug\net6.0-windows\ref\FirstExercise4Class.dll
