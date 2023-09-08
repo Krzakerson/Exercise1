@@ -145,7 +145,8 @@ namespace FirstExercise4Class
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            
+            Form2 form2 = new Form2(selectedimage);
+            form2.ShowDialog();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
