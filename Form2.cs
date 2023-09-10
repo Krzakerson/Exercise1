@@ -57,7 +57,7 @@ namespace FirstExercise4Class
 
 
 
-                    pictureBox1.Invalidate();
+                  
                     pictureBox1.Image.Save(saveFileDialog.FileName);
                 }
             }
