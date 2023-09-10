@@ -44,6 +44,7 @@
             this.menu1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menu2 = new System.Windows.Forms.ToolStripMenuItem();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.newFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -170,7 +171,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menu1,
-            this.menu2});
+            this.menu2,
+            this.newFileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -190,6 +192,13 @@
             this.menu2.Size = new System.Drawing.Size(69, 20);
             this.menu2.Text = "Open File";
             this.menu2.Click += new System.EventHandler(this.menu2_Click_1);
+            // 
+            // newFileToolStripMenuItem
+            // 
+            this.newFileToolStripMenuItem.Name = "newFileToolStripMenuItem";
+            this.newFileToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.newFileToolStripMenuItem.Text = "New File";
+            this.newFileToolStripMenuItem.Click += new System.EventHandler(this.newFileToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -229,5 +238,6 @@
         private PictureBox pictureBox3;
         private Button btnEdit;
         private ColorDialog colorDialog1;
+        private ToolStripMenuItem newFileToolStripMenuItem;
     }
 }
