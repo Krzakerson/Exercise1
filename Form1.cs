@@ -10,7 +10,7 @@ namespace FirstExercise4Class
         public Form1()
         {
             InitializeComponent();
-          
+            btnSave.Enabled = true;
 
         }
 

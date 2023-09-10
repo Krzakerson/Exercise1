@@ -43,8 +43,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menu1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menu2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.newFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -239,5 +240,6 @@
         private Button btnEdit;
         private ColorDialog colorDialog1;
         private ToolStripMenuItem newFileToolStripMenuItem;
+        private SaveFileDialog saveFileDialog1;
     }
 }
