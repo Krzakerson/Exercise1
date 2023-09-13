@@ -1,2 +1,3 @@
 ﻿//TODO
-Zapisywnanie działające 
+Przepisac zapisywanie do form3
+wiecej rozszerzen mozliwych do obsluzenia
