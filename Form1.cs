@@ -10,11 +10,11 @@ namespace FirstExercise4Class
         public Form1()
         {
             InitializeComponent();
-
+            btnSave.Enabled = true;
 
         }
-        bool IsDrawing = false;
-        Bitmap bitmap;
+
+        string selectedimage = "";
         string folderpath = "";
         string[] files;
         int n;
@@ -38,6 +38,7 @@ namespace FirstExercise4Class
             try
             {
                 n++;
+                selectedimage = files[n];
                 string fileext = Path.GetExtension(files[n]);
                 if (fileext == ".jpg" || fileext == ".png" || fileext == ".jpeg")
                 {
@@ -61,6 +62,7 @@ namespace FirstExercise4Class
             try
             {
                 n--;
+                selectedimage = files[n];   
                 string fileext = Path.GetExtension(files[n]);
                 if (fileext == ".jpg" || fileext == ".png" || fileext == ".jpeg")
                 {
@@ -83,60 +85,7 @@ namespace FirstExercise4Class
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            if(pictureBox3.Image != null)
-            {
-                var pen = new Pen(Color.Red, 1);
-                var bmp = (Bitmap)pictureBox3.Image;
-            }
-            else
-            {
-                MessageBox.Show("First load image");
-            }
-         
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            if (pictureBox3.Image != null)
-            {
-                var pen = new Pen(Color.Green, 1);
-                var bmp = (Bitmap)pictureBox3.Image;
-            }
-            else
-            {
-                MessageBox.Show("First load image");
-            }
-
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            if (pictureBox3.Image != null)
-            {
-                var pen = new Pen(Color.White, 1);
-                var bmp = (Bitmap)pictureBox3.Image;
-            }
-            else
-            {
-                MessageBox.Show("First load image");
-            }
-        }
-
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-            if (pictureBox3.Image != null)
-            {
-                var pen = new Pen(Color.Black, 1);
-                var bmp = (Bitmap)pictureBox3.Image;
-            }
-            else
-            {
-                MessageBox.Show("First load image");
-            }
-        }
-
+    
         private void menu1_Click_1(object sender, EventArgs e)
         {
             FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
@@ -160,6 +109,7 @@ namespace FirstExercise4Class
                 if (fileext == ".jpg" || fileext == ".png" || fileext == ".jpeg")
                 {
                     pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
+                    selectedimage = files[n];   
                     pictureBox3.Image = new Bitmap(files[n]);
                 }
                 else
@@ -181,6 +131,7 @@ namespace FirstExercise4Class
                 if (ext == ".jpg" || ext == ".png" || ext == ".jpeg")
                 {
                     pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
+                    selectedimage = openFileDialog1.FileName;
                     pictureBox3.Image = new Bitmap(openFileDialog1.FileName);
                 }
                 else
@@ -194,7 +145,8 @@ namespace FirstExercise4Class
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-
+            Form2 form2 = new Form2(selectedimage);
+            form2.ShowDialog();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -224,6 +176,10 @@ namespace FirstExercise4Class
 
         }
 
-
+        private void newFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.ShowDialog(); 
+        }
     }
 }
