@@ -20,15 +20,15 @@ namespace FirstExercise4Class
         int y = -1;
         bool moving = false;
         Pen pen;
-       
+
         public Form3()
         {
             InitializeComponent();
             //pictureBox1.Image = new Bitmap(@"C:\\Users\\michz\\Desktop\\Obra\\a.jpg");
             graphics = panel1.CreateGraphics();
-            pen = new Pen(Color.Black,5) ;
-            
-        } 
+            pen = new Pen(Color.Black, 5);
+
+        }
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
@@ -36,10 +36,10 @@ namespace FirstExercise4Class
             //e.Graphics.FillRectangle(Brushes.Red, rectangle);
         }
 
-       
 
-      
-       
+
+
+
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -50,20 +50,20 @@ namespace FirstExercise4Class
 
         private void panel1_MouseMove(object sender, MouseEventArgs e)
         {
-            if(moving && x!= -1 && y != -1)
+            if (moving && x != -1 && y != -1)
             {
-                graphics.DrawLine(pen,new Point(x,y),e.Location);
+                graphics.DrawLine(pen, new Point(x, y), e.Location);
                 x = e.X;
                 y = e.Y;
             }
         }
 
-       
+
 
         private void panel1_MouseUp(object sender, MouseEventArgs e)
         {
             moving = false;
-            x=-1;
+            x = -1;
             y = -1;
         }
 
@@ -112,7 +112,7 @@ namespace FirstExercise4Class
                             panel1.DrawToBitmap(bmp, new Rectangle(0, 0, bmp.Width, bmp.Height));
                             bmp.Save(fs, ImageFormat.Jpeg);
                         }
-                       
+
                         break;
                     case 2:
                         using (var bmp = new Bitmap(panel1.Width, panel1.Height))
@@ -126,6 +126,6 @@ namespace FirstExercise4Class
                 fs.Close();
             }
         }
-           
+
     }
 }

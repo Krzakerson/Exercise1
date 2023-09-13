@@ -1,26 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\michz\\Desktop\\Klasa 4tip\\FirstExercise4Class\\Exercise1\\FirstExercise4Class.csproj": {}
+    "E:\\student\\dokumenty\\GitHub\\Exercise1\\FirstExercise4Class.csproj": {}
   },
   "projects": {
-    "C:\\Users\\michz\\Desktop\\Klasa 4tip\\FirstExercise4Class\\Exercise1\\FirstExercise4Class.csproj": {
+    "E:\\student\\dokumenty\\GitHub\\Exercise1\\FirstExercise4Class.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\michz\\Desktop\\Klasa 4tip\\FirstExercise4Class\\Exercise1\\FirstExercise4Class.csproj",
+        "projectUniqueName": "E:\\student\\dokumenty\\GitHub\\Exercise1\\FirstExercise4Class.csproj",
         "projectName": "FirstExercise4Class",
-        "projectPath": "C:\\Users\\michz\\Desktop\\Klasa 4tip\\FirstExercise4Class\\Exercise1\\FirstExercise4Class.csproj",
-        "packagesPath": "C:\\Users\\michz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\michz\\Desktop\\Klasa 4tip\\FirstExercise4Class\\Exercise1\\obj\\",
+        "projectPath": "E:\\student\\dokumenty\\GitHub\\Exercise1\\FirstExercise4Class.csproj",
+        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
+        "outputPath": "E:\\student\\dokumenty\\GitHub\\Exercise1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\Projekty szkola\\Components\\Offline Packages",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\michz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "D:\\Projekty szkola\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -66,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

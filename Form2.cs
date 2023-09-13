@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,22 +49,23 @@ namespace FirstExercise4Class
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (pictureBox1 != null)
+            Bitmap bitmap = new Bitmap(pictureBox1.Image);
+
+            SaveFileDialog saveDialog = new SaveFileDialog();
+            saveDialog.Filter = "Bitmap Image|*.bmp";
+            saveDialog.Title = "Save Bitmap Image";
+
+            if (saveDialog.ShowDialog() == DialogResult.OK)
             {
-                SaveFileDialog saveFileDialog = new SaveFileDialog();
-                if (saveFileDialog.ShowDialog() == DialogResult.OK)
-                {
+                string filePath = saveDialog.FileName;
 
+                // Choose the desired format (Bmp, Jpeg, Png, etc.)
+                ImageFormat format = ImageFormat.Bmp;
 
+                // Save the bitmap to the specified file path
+                bitmap.Save(filePath, format);
 
-
-                  
-                    pictureBox1.Image.Save(saveFileDialog.FileName);
-                }
-            }
-            else
-            {
-                MessageBox.Show("There is not image to be save");
+                MessageBox.Show("Bitmap saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

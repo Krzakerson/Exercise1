@@ -72,3 +72,5 @@ E:\student\dokumenty\GitHub\Exercise1\obj\Debug\net6.0-windows\FirstExercise4Cla
 E:\student\dokumenty\GitHub\Exercise1\obj\Debug\net6.0-windows\ref\FirstExercise4Class.dll
 C:\Users\michz\Desktop\Klasa 4tip\FirstExercise4Class\Exercise1\obj\Debug\net6.0-windows\FirstExercise4Class.Form2.resources
 C:\Users\michz\Desktop\Klasa 4tip\FirstExercise4Class\Exercise1\obj\Debug\net6.0-windows\FirstExercise4Class.Form3.resources
+E:\student\dokumenty\GitHub\Exercise1\obj\Debug\net6.0-windows\FirstExercise4Class.Form2.resources
+E:\student\dokumenty\GitHub\Exercise1\obj\Debug\net6.0-windows\FirstExercise4Class.Form3.resources
