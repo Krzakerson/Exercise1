@@ -14,20 +14,19 @@ namespace FirstExercise4Class
 {
     public partial class Form3 : Form
     {
-        Rectangle rectangle = new Rectangle(10, 10, 200, 100);
-        Graphics graphics;
-        int x = -1;
-        int y = -1;
+
         bool moving = false;
-        Pen pen;
+        Bitmap bitmap;
+        Pen pen = new Pen(Color.Black, 5);
+       
 
         public Form3()
         {
             InitializeComponent();
             //pictureBox1.Image = new Bitmap(@"C:\\Users\\michz\\Desktop\\Obra\\a.jpg");
-            graphics = panel1.CreateGraphics();
-            pen = new Pen(Color.Black, 5);
-
+            bitmap = new Bitmap(pictureBox5.Width, pictureBox5.Height);
+            pen.Width = 9.0F;
+           
         }
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
@@ -41,31 +40,7 @@ namespace FirstExercise4Class
 
 
 
-        private void panel1_MouseDown(object sender, MouseEventArgs e)
-        {
-            moving = true;
-            x = e.X;
-            y = e.Y;
-        }
 
-        private void panel1_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (moving && x != -1 && y != -1)
-            {
-                graphics.DrawLine(pen, new Point(x, y), e.Location);
-                x = e.X;
-                y = e.Y;
-            }
-        }
-
-
-
-        private void panel1_MouseUp(object sender, MouseEventArgs e)
-        {
-            moving = false;
-            x = -1;
-            y = -1;
-        }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
@@ -127,5 +102,32 @@ namespace FirstExercise4Class
             }
         }
 
+        private void pictureBox5_MouseDown(object sender, MouseEventArgs e)
+        {
+
+            if (moving == true)
+            {
+                moving = false;
+            }
+            else
+            {
+                moving = true;
+            }
+        }
+
+        private void pictureBox5_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (moving == true)
+            {
+                Graphics graphics = Graphics.FromImage(bitmap);
+                graphics.DrawRectangle(pen, e.X, e.Y, 3, 1);
+                pictureBox5.Image = bitmap;
+            }
+        }
+
+        private void pictureBox5_MouseUp(object sender, MouseEventArgs e)
+        {
+            moving = false;
+        }
     }
 }

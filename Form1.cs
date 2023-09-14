@@ -106,7 +106,7 @@ namespace FirstExercise4Class
 
                 string fileext = Path.GetExtension(files[n]);
 
-                if (fileext == ".jpg" || fileext == ".png" || fileext == ".jpeg")
+                if (fileext == ".jpg" || fileext == ".png" || fileext == ".jpeg" || fileext == ".bmp")
                 {
                     pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
                     selectedimage = files[n];   
@@ -128,7 +128,7 @@ namespace FirstExercise4Class
                 btnSave.Enabled = true;
                 string ext = Path.GetExtension(openFileDialog1.FileName);
 
-                if (ext == ".jpg" || ext == ".png" || ext == ".jpeg")
+                if (ext == ".jpg" || ext == ".png" || ext == ".jpeg" || ext == ".bmp")
                 {
                     pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
                     selectedimage = openFileDialog1.FileName;

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            pictureBox5 = new PictureBox();
             panel2 = new Panel();
             pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
@@ -37,6 +38,8 @@
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             btnSave = new Button();
             saveFileDialog1 = new SaveFileDialog();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -46,13 +49,23 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(pictureBox5);
             panel1.Location = new Point(1, 50);
             panel1.Name = "panel1";
             panel1.Size = new Size(799, 400);
             panel1.TabIndex = 0;
-            panel1.MouseDown += panel1_MouseDown;
-            panel1.MouseMove += panel1_MouseMove;
-            panel1.MouseUp += panel1_MouseUp;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Dock = DockStyle.Fill;
+            pictureBox5.Location = new Point(0, 0);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(799, 400);
+            pictureBox5.TabIndex = 0;
+            pictureBox5.TabStop = false;
+            pictureBox5.MouseDown += pictureBox5_MouseDown;
+            pictureBox5.MouseMove += pictureBox5_MouseMove;
+            pictureBox5.MouseUp += pictureBox5_MouseUp;
             // 
             // panel2
             // 
@@ -126,6 +139,8 @@
             Controls.Add(panel1);
             Name = "Form3";
             Text = "Form3";
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -146,5 +161,6 @@
         private Button btnSave;
         private SaveFileDialog saveFileDialog1;
         private Button button1;
+        private PictureBox pictureBox5;
     }
 }

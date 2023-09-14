@@ -38,7 +38,7 @@ namespace FirstExercise4Class
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            pen.Width = 9.0F;
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 
         }
@@ -106,7 +106,7 @@ namespace FirstExercise4Class
 
         private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
         {
-
+            moving = false;
         }
 
         private void saveToolStripMenuItem_Click_1(object sender, EventArgs e)
